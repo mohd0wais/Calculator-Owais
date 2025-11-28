@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="post" name="myform">
+            
+            <h2>Casio</h2>
+            <p>fx-2025</p>
+
+            <input type="text" name="a" style="padding: 15px 20px 15px 20px; margin-top: 10px; border-radius: 15px; border: none; text-align: center; margin-bottom: 30px; font-size: 25px;" ><br>
+    
+            <div class="button">
+                <input type="button" value="C"  style="color:red;" onclick="document.myform.a.value=''">
+                <input type="button" style="width: 60px; padding-left: 12px;" value="del" onclick="document.myform.a.value=document.myform.a.value.slice(0,-1)">
+                <input type="button" value="%" onclick="document.myform.a.value += '%'">
+                <input type="button" style="background-color: rgb(247, 186, 72);" value="/" onclick="document.myform.a.value += '/'"><br>
+                <input type="button" value="7" onclick="document.myform.a.value += 7">
+                <input type="button" value="8" onclick="document.myform.a.value += 8">
+                <input type="button" value="9" onclick="document.myform.a.value += 9">
+                <input type="button" style="background-color: rgb(247, 186, 72);" value="*" onclick="document.myform.a.value += '*'"><br>
+                <input type="button" value="4" onclick="document.myform.a.value += 4">
+                <input type="button" value="5" onclick="document.myform.a.value += 5">
+                <input type="button" value="6" onclick="document.myform.a.value += 6">
+                <input type="button" style="background-color: rgb(247, 186, 72);" value="-" onclick="document.myform.a.value += '-'"><br>
+                <input type="button" value="1" onclick="document.myform.a.value += 1">
+                <input type="button" value="2" onclick="document.myform.a.value += 2">
+                <input type="button" value="3" onclick="document.myform.a.value += 3">
+                <input type="button" style="background-color: rgb(247, 186, 72);" value="+" onclick="document.myform.a.value += '+'"><br>
+                <input type="button" style="border-radius: 50%; width: 60px; margin-right: 5px; " value="." onclick="document.myform.a.value += '.'">
+                <input type="button" value="0" onclick="document.myform.a.value += 0">
+                
+                <input type="button" style="width: 125px; border-radius: 40px; background-color: rgb(247, 186, 72);" value="=" onclick="document.   myform.a.value= eval(document.myform.a.value)" >
+            </div>    
+             <!-- <input type="button" value="del" onclick += "backspace()"> -->
+            <!-- <button value="00" onclick="document.myform.a.value += '00' ">00</button> -->
+            
+            
+        </form>
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>
